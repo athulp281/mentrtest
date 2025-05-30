@@ -3,7 +3,7 @@ import React from 'react';
 import { portfolio_data } from '../../../data';
 
 const ProjectArea = () => {
-  const [category, setCategory] = React.useState('Website Design');
+  const [category, setCategory] = React.useState('Major Points');
   const items = portfolio_data.filter(p => p.home);
   const [portfolioItems, setPortfolioItems] = React.useState(items.filter(i => i.category === category));
   const categories = [...new Set(items.map(p => p.category))];
@@ -33,8 +33,8 @@ React.useEffect(() => {
         <div className="row align-items-center mb-15">
           <div className="col-xl-5 col-lg-12 col-md-12">
             <div className="tp-project-section-box">
-              <h5 className="tp-subtitle">Our Project</h5>
-              <h2 className="tp-title">Creative work. </h2>
+              <h5 className="tp-subtitle">Our Target</h5>
+              <h2 className="tp-title">What to Expect after learning. </h2>
             </div>
           </div>
           <div className="col-xl-7 col-lg-12 col-md-12">
@@ -66,16 +66,17 @@ React.useEffect(() => {
                     <h2 className="pro-lg-title">
                       <Link href={`/portfolio-details/${item.id}`}>
                         {/* <a> */}
-                          Banking App Management
+                          Industry-Ready Skills
                           {/* </a> */}
                       </Link>
                     </h2>
-                    <p>At Collax we specialize in designing, building, shipping...</p>
-                    <Link href={`/portfolio-details/${item.id}`} className="tp-btn-sm">
-                      {/* <a className="tp-btn-sm"> */}
+                    <p>Gain hands-on expertise in high-demand fields to stand out in the job market
+from day one</p>
+                    {/* <Link href={`/portfolio-details/${item.id}`} className="tp-btn-sm">
+                     
                         View Case Studies <i className="far fa-arrow-right"></i>
-                        {/* </a> */}
-                    </Link>
+                       
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -97,13 +98,12 @@ React.useEffect(() => {
                           </Link>
                         </h3>
                         <p>{item.sm_text}</p>
-                        <Link href={`/portfolio-details/${item.id}`} className="tp-btn-white-sm">
-                          {/* <a className="tp-btn-white-sm"
-                          > */}
+                        {/* <Link href={`/portfolio-details/${item.id}`} className="tp-btn-white-sm">
+                          
                             Case Studies 
                           <i className="far fa-arrow-right"></i>
-                          {/* </a> */}
-                        </Link>
+                         
+                        </Link> */}
                       </div>
                     </div>
                   </div>

@@ -51,7 +51,7 @@ React.useEffect(() => {
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"logo.png"} />
+      <MobileMenu logo={"logo-blue.png"} />
       {/* <!-- mobile-menu-area-end --> */}
 
       {/* off canvas start */}

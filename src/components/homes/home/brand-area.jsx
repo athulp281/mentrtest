@@ -8,7 +8,7 @@ const BrandArea = () => {
         <div className="row">
           <div className="col-12">
             <div className="tp-brand-section text-center pb-60">
-              <h4 className="tp-brand-title">We are Already Build Solution for...</h4>
+              <h4 className="tp-brand-title">Our courses were inspired by...</h4>
             </div>
           </div>
         </div>

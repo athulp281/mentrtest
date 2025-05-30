@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           <div className="tpoffcanvas__logo">
             <Link href="/">
               
-                <img src="/assets/img/logo/logo-white.png" alt="" />
+                <img src="/assets/img/logo/logo-blue.png" alt="" />
               
             </Link>
           </div>

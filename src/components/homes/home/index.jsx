@@ -9,6 +9,7 @@ import NewsLetter from './news-letter';
 import ProjectArea from './project-area';
 import ServicesArea from './services-area';
 import Testimonial from './testimonial';
+import CooArea from './CooArea';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <BrandArea/>
       <ServicesArea/>
       <ProjectArea/>
+      <CooArea/>
       <Testimonial/>
       <BlogArea/>
       <NewsLetter/>

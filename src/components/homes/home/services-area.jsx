@@ -6,7 +6,7 @@ import SingleServiceTwo from '../../common/single-service-2';
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
   subtitle: 'What We Do?',
-  title: 'Experts in every aspect lifecycle',
+  title: 'Future-Ready Skills We Provide for Lifelong Success',
   btn_text: 'View All Services',
 }
 

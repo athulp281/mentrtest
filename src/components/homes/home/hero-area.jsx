@@ -4,11 +4,12 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 const hero_contents = {
-  title: 'We make things look good',
-  text: <>At Collax we specialize in designing, building, shipping and scaling beautiful, <br />
-    usable products with blazing-fast efficiency</>,
-  btn_text: 'Visit Case Studies',
-  btn_text_2: 'About Collax',
+  title: 'Not Just a Learning Curve - It’s a Lifelong Loop of Growth.',
+  text: <>Unlock your potential with continuous, hands-on skill development. Whether you're starting fresh
+or leveling up, we’re with you every step of the way.
+</>,
+  btn_text: 'View All Services',
+  btn_text_2: 'About MentrLoop',
   social_links: [
     { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'http://facebook.com' },
     { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/' },

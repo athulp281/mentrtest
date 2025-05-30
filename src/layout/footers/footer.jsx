@@ -7,7 +7,7 @@ const footer_contents = {
   btn_text: 'Available for new Project',
   copyRight_text: <>© {new Date().getFullYear()} Creative Agency , All Right Receved.</>,
   conditions: ['Support', 'Privacy policy', 'Terms and conditions'],
-  logo: '/assets/img/copyright/copyright-logo.png',
+  logo: '/assets/img/logo/logo-blue.png',
   social_links: ['fab fa-linkedin-in', 'fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube']
 }
 

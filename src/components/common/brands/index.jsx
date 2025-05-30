@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
 const brand_images = [
-  '/assets/img/brand/brand-1.png',
-  '/assets/img/brand/brand-2.png',
-  '/assets/img/brand/brand-3.png',
-  '/assets/img/brand/brand-4.png',
-  '/assets/img/brand/brand-5.png',
-  '/assets/img/brand/brand-6.png',
-  '/assets/img/brand/brand-6.png',
+  '/assets/img/brand/google.png',
+  '/assets/img/brand/canva.png',
+  '/assets/img/brand/dv.png',
+  '/assets/img/brand/adobe.png',
+  '/assets/img/brand/hubspot.png',
+  '/assets/img/brand/semursh.png',
+  
 ]
 
 const Index = () => {
@@ -28,7 +28,7 @@ const Index = () => {
       breakpoints={{
         // when window width is >= 1200px
         1200: {
-          slidesPerView: 6,
+          slidesPerView: 5,
         },
         // when window width is >= 992px
         992: {
@@ -47,7 +47,7 @@ const Index = () => {
       {brand_images.map((brand, i) => (
         <SwiperSlide key={i}>
           <div className="tp-brand-icon text-center">
-            <img src={brand} alt="" />
+            <img src={brand} alt="" height={100} width={100} />
           </div>
         </SwiperSlide>
       ))}
