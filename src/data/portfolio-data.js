@@ -3,7 +3,7 @@ const portfolio_data = [
   // Website Design
   {
     id: 1,
-    img: "/assets/img/project/project-1.jpg",
+    img: "/assets/img/project/readySkills.jpg",
     title: "Hosting Website Design",
     sm_text: "At Collax we specialize in designing, building, shipping...",
     category: "Major Points",
@@ -12,7 +12,7 @@ const portfolio_data = [
   },
   {
     id: 2,
-    img: "/assets/img/project/project-2.jpg",
+    img: "/assets/img/project/portfolio.jpg",
     title: "Portfolio Building",
     sm_text:
       "Create real-world projects that you can showcase to clients, recruiters, or investors",
@@ -22,7 +22,7 @@ const portfolio_data = [
   },
   {
     id: 3,
-    img: "/assets/img/project/project-4.jpg",
+    img: "/assets/img/project/carrier.jpg",
     title: "Career Acceleration",
     sm_text:
       "Upgrade your profile and fast-track your career with skills employers are actively seeking",
@@ -33,7 +33,7 @@ const portfolio_data = [
   // Branding Design
   {
     id: 4,
-    img: "/assets/img/project/brand-1.jpg",
+    img: "/assets/img/project/support.jpg",
     title: "Entrepreneurship Support",
     sm_text:
       "Get guidance, mentorship, and resources to launch and grow your own startup with confidence",
@@ -43,7 +43,7 @@ const portfolio_data = [
   },
   {
     id: 5,
-    img: "/assets/img/project/brand-2.jpg",
+    img: "/assets/img/project/confidence.jpg",
     title: "Confidence & Mindset Growth",
     sm_text:
       "Build self-confidence, clarity, and a problem-solving mindset to excel in your personal and professional journey",
@@ -53,7 +53,7 @@ const portfolio_data = [
   },
   {
     id: 6,
-    img: "/assets/img/project/brand-3.jpg",
+    img: "/assets/img/project/place.jpg",
     title: "Placement & Internship Support",
     sm_text:
       "Receive assistance with internships, job placements, and interview preparation from our support team.",

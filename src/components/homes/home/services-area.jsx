@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { services_data } from '../../../data';
 import SingleServiceTwo from '../../common/single-service-2';
+import MotionWrapper from '@/components/MotionWrapper';
 
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
@@ -29,14 +30,15 @@ const ServicesArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-12">
-            <div className="tp-service-section-box mb-30 wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
+            <div className="tp-service-section-box mb-30 " >
               <h5 className="tp-subtitle pb-10">{subtitle}</h5>
-              <h2 className="tp-title">{title}</h2>
-              <Link href="/service-1" className="tp-btn">
+           <MotionWrapper directions={"bottom"} delay={.4}><h2 className="tp-title">{title}</h2></MotionWrapper>  
+            <MotionWrapper directions={"bottom"} delay={.4}><Link href="/service-1" className="tp-btn">
                 
                   {btn_text}
                  
-              </Link>
+              </Link></MotionWrapper> 
+              
             </div>
           </div>
           {services_items.map((s, i) => (

@@ -1,5 +1,6 @@
 'use client';
 
+import MotionWrapper from '@/components/MotionWrapper';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 
@@ -36,11 +37,16 @@ const HeroArea = () => {
             <div className="col-xl-7 col-lg-7">
               <div className="tp-hero-content">
                 <div className="tp-hero-text">
-                  <h2 className="tp-hero-title wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
+                  <MotionWrapper directions={"right"} delay={.4}>
+                  <h2 className="tp-hero-title wow tpfadeUp">
                     {title}
                   </h2>
-                  <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".8s">{text}</p>
-                  <div className="tp-hero-button mb-140 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                  </MotionWrapper>
+                <MotionWrapper directions={"bottom"} delay={.6}>   <p>{text}</p></MotionWrapper>
+                
+                 <MotionWrapper directions={"bottom"} delay={.4}>
+                  <div className="tp-hero-button mb-140" >
+                
                     <Link href="/portfolio" className="tp-btn mr-30">
                       {btn_text}
                     </Link>
@@ -51,22 +57,27 @@ const HeroArea = () => {
                        
                     </Link>
                   </div>
+                  </MotionWrapper>
                   <div className="tp-hero-social pb-30 wow tpfadeIn" data-wow-duration=".7s" data-wow-delay="1.2s">
+                    <MotionWrapper directions={"bottom"} delay={.4}>
                     <div className="tp-hero-social bp-hero-social">
                       {social_links.map((l, i) => (
                         <a key={i} className={`social-icon-${l.id}`} href={l.link} target="_blank" rel="noreferrer">
+                          
                           <i className={l.icon}></i><span>{l.title}</span>
                         </a>
                       ))}
                     </div>
+                    </MotionWrapper>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-xl-5 col-lg-5">
-              <div className="tp-hero-big-img wow fadeInRight" data-wow-duration=".7s" data-wow-delay="1.2s">
+               <MotionWrapper directions={"top"} delay={.4}> <div >
                 <img src={hero_img} alt="" />
-              </div>
+              </div></MotionWrapper>
+             
             </div>
           </div>
         </div>

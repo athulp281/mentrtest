@@ -1,3 +1,4 @@
+import MotionWrapper from '@/components/MotionWrapper';
 import Link from 'next/link';
 import React from 'react';
 
@@ -17,7 +18,7 @@ const { about_img, btn_text, sm_desc, subtitle, title,sm_desc_second } = about_c
 
 const CooArea = () => {
   return (
-    <div className="tp-about-area grey-bg pt-120 pb-120 p-relative fix">
+    <div className="tp-about-area  pt-120 pb-120 p-relative fix">
       <Shape shape_class="sm-1" img='chose/hero-shape-5.1.png' />
       <Shape shape_class="sm-2" img='chose/bp-chose-5.2.png' />
       <div className="bp-about-shape d-none d-md-block">
@@ -25,17 +26,25 @@ const CooArea = () => {
       </div>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".3s" data-wow-delay=".5s">
+          <div className="col-xl-5 col-lg-5 ">
+             <MotionWrapper directions={"bottom"} delay={.4}>
             <div className="bp-about-img">
               <img src={about_img} alt="" />
             </div>
+            </MotionWrapper>
           </div>
           <div className="col-xl-7 col-lg-7 col-md-10 col-12 wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">
             <div className="tp-feature-section-title-box bs-section-title-space">
+                 <MotionWrapper directions={"top"} delay={.4}>
               <h5 className="tp-subtitle tp-subtitle-before-color pb-10">{subtitle}</h5>
+              </MotionWrapper>
+               <MotionWrapper directions={"bottom"} delay={.4}>
               <h2 className="tp-title tp-title-sm">{title}</h2>
+              </MotionWrapper>
+               <MotionWrapper directions={"right"} delay={.4}>
               <p className="pb-25">{sm_desc}</p>
                <p className="pt-10">{sm_desc_second}</p>
+               </MotionWrapper>
               <div style={{display:"flex",justifyContent:"flex-end",marginTop:20}}>
                Aamir Shah COO, MentrLoop
                

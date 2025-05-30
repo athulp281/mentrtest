@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import MotionWrapper from '../MotionWrapper';
 
 const SingleServiceTwo = ({ service, border }) => {
   return (
     <div className="col-lg-6 col-md-12 col-12">
+      <MotionWrapper directions={"left"} delay={.4}>
       <div className="tp-sv-box wow tpfadeUp" data-wow-duration={service.duration}
         data-wow-delay={service.delay}>
         <div className={`tp-service-item ${border ? border : ''} d-flex mb-30`}>
@@ -30,6 +32,7 @@ const SingleServiceTwo = ({ service, border }) => {
           </div>
         </div>
       </div>
+      </MotionWrapper>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { portfolio_data } from '../../../data';
+import MotionWrapper from '@/components/MotionWrapper';
 
 const ProjectArea = () => {
   const [category, setCategory] = React.useState('Major Points');
@@ -33,11 +34,14 @@ React.useEffect(() => {
         <div className="row align-items-center mb-15">
           <div className="col-xl-5 col-lg-12 col-md-12">
             <div className="tp-project-section-box">
+               <MotionWrapper directions={"bottom"} delay={.4}>
               <h5 className="tp-subtitle">Our Target</h5>
               <h2 className="tp-title">What to Expect after learning. </h2>
+              </MotionWrapper>
             </div>
           </div>
           <div className="col-xl-7 col-lg-12 col-md-12">
+            <MotionWrapper directions={"top"} delay={.4}>
             <div className="tp-service-tab-button">
               <nav>
                 <div className="nav tp-service-tab justify-content-xl-end justify-content-lg-center" id="nav-tab"
@@ -51,6 +55,7 @@ React.useEffect(() => {
                 </div>
               </nav>
             </div>
+            </MotionWrapper>
           </div>
         </div>
 
@@ -58,6 +63,7 @@ React.useEffect(() => {
           <div className="row gx-1">
             {bigItems.map((item) => (
               <div key={item.id} className="col-xl-6 col-lg-12">
+                 <MotionWrapper directions={"left"} delay={.4}>
                 <div className="tp-project-box mb-20">
                   <div className="tp-project-img fix mb-45">
                     <img className="w-100" src={item.img} alt="" />
@@ -79,12 +85,14 @@ from day one</p>
                     </Link> */}
                   </div>
                 </div>
+                </MotionWrapper>
               </div>
             ))}
             <div className="col-xl-6 col-lg-12">
               <div className="row">
                 {sm_items.map(item => (
                   <div key={item.id} className=" col-xl-12 col-lg-12">
+                     <MotionWrapper directions={"right"} delay={.4}>
                     <div className="tp-project-box-sm d-flex align-items-center mb-20">
                       <div className="tp-project-sm-img fix ml-25 mr-35">
                         <img src={item.img} alt="" />
@@ -106,6 +114,7 @@ from day one</p>
                         </Link> */}
                       </div>
                     </div>
+                    </MotionWrapper>
                   </div>
                 ))}
               </div>

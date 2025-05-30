@@ -4,8 +4,8 @@ import { ClipPath, UpArrow } from '../../svg';
 
 const footer_contents = {
   title: <>More than 10 years in the game and {"we're"} <br /> just getting started.🤝</>,
-  btn_text: 'Available for new Project',
-  copyRight_text: <>© {new Date().getFullYear()} Creative Agency , All Right Receved.</>,
+  btn_text: 'View available services',
+  copyRight_text: <>© {new Date().getFullYear()} MentrLoop , All Right Receved.</>,
   conditions: ['Support', 'Privacy policy', 'Terms and conditions'],
   logo: '/assets/img/logo/logo-blue.png',
   social_links: ['fab fa-linkedin-in', 'fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube']

@@ -1,8 +1,7 @@
-"use client";
-
-export const animationCreate = () => {
+// utils/animationCreate.ts
+export const animationCreate = async () => {
   if (typeof window !== "undefined") {
-    const WOW = require("wowjs").WOW;
-    new WOW({ live: true }).init();
+    const WOW = (await import("wowjs")).default; // Fix is here
+    new WOW({ live: false }).init();
   }
 };

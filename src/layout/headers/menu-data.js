@@ -2,7 +2,7 @@ const menu_data = [
   {
     id: 1,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Home",
     link: "/",
     sub_menus: [
@@ -17,8 +17,8 @@ const menu_data = [
   {
     id: 2,
     mega_menu: false,
-    has_dropdown: true,
-    title: "Portfolio",
+    has_dropdown: false,
+    title: "About",
     link: "/portfolio",
     sub_menus: [
       { link: "/portfolio", title: "Portfolio Full Width" },
@@ -31,8 +31,8 @@ const menu_data = [
   {
     id: 3,
     mega_menu: true,
-    has_dropdown: true,
-    title: "Pages",
+    has_dropdown: false,
+    title: "News",
     link: "#",
     sub_menus: [
       { link: "/about", title: "About" },
@@ -60,7 +60,7 @@ const menu_data = [
   {
     id: 4,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Blog",
     link: "/blog",
     sub_menus: [

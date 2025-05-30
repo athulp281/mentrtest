@@ -1,5 +1,6 @@
 import { Providers } from "./providers";
-import "animate.css";
+// app/layout.tsx
+import "animate.css/animate.min.css";
 
 export const metadata = {
   title: "Create Next App",

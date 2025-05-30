@@ -1,6 +1,7 @@
 import React from 'react';
 import useModal from '../../../hooks/use-modal';
 import VideoModal from '../../common/modals/modal-video';
+import MotionWrapper from '@/components/MotionWrapper';
 
 const creative_contents = {
   shape_1: '/assets/img/hero/shape-2.png',
@@ -68,7 +69,7 @@ React.useEffect(() => {
               <div className="col-lg-12">
                 <div className="tp-creative-box text-center">
                   <div className="tp-creative-content mb-110">
-                    <h4 className="tp-creative-title">{title}</h4>
+                   <MotionWrapper directions={"top"} delay={.4}><h4 className="tp-creative-title">{title}</h4></MotionWrapper> 
                   </div>
                   <div className="tp-play-button mb-150">
                     {isClient && (
@@ -83,20 +84,24 @@ React.useEffect(() => {
             </div>
             <div className="creative-box pl-40 pr-40">
               <div className="row gx-5">
-                {creative_box.map((b) => (
+                {creative_box.map((b,i) => (
+                  
                   <div key={b.id} className="col-lg-4 col-md-12 col-xs-12 mb-30">
-                    <div className={`tp-creative-item ${b?.color} wow tpfadeUp`} data-wow-duration={b.duration} data-wow-delay={b.delay}>
+                    <MotionWrapper directions={"bottom"} delay={.4}>
+                    <div className={`tp-creative-item ${b?.color} wow tpfadeUp`}>
                       <div className="tp-creative-yellow d-flex align-items-center">
                         <div className="tp-creative-icon mr-35">
                           <i className={b.icon}></i>
                         </div>
                         <div className="counter-text">
                           <span>{b.box_title}</span>
-                          <p className="m-0">{b.box_text}</p>
+                          <p className="m-0"><b>{b.box_text}</b></p>
                         </div>
                       </div>
                     </div>
+                    </MotionWrapper>
                   </div>
+                  
                 ))}
               </div>
             </div>
