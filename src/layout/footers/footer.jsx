@@ -3,15 +3,16 @@ import React from 'react';
 import { ClipPath, UpArrow } from '../../svg';
 
 const footer_contents = {
-  title: <>More than 10 years in the game and {"we're"} <br /> just getting started.🤝</>,
-  btn_text: 'View available services',
+  title: <>Ready to Build Your Future, Not Just Watch Others Build Theirs?</>,
+  desc:"Take the first step today. Learn real skills, get real results, and start creating your own success story.",
+  btn_text: 'Contact as',
   copyRight_text: <>© {new Date().getFullYear()} MentrLoop , All Right Receved.</>,
   conditions: ['Support', 'Privacy policy', 'Terms and conditions'],
   logo: '/assets/img/logo/logo-blue.png',
-  social_links: ['fab fa-linkedin-in', 'fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube']
+  social_links: [{icon:'fab fa-linkedin-in',link:"https://www.linkedin.com/company/mentrloop"}, {icon:'fab fa-facebook-f',link:"https://www.facebook.com/profile.php?id=61576718240212"}, {icon:'fab fa-instagram',link:"https://www.instagram.com/mentrloop"}]
 }
 
-const { btn_text, conditions, copyRight_text, logo, social_links, title } = footer_contents;
+const { btn_text, conditions, copyRight_text, logo, social_links, title,desc } = footer_contents;
 
 const Footer = () => {
   return (
@@ -38,6 +39,9 @@ const Footer = () => {
               <div className="col-xl-7 col-lg-7 col-md-7 col-12">
                 <div className="tp-footer-top">
                   <h5 className="tp-footer-title">{title}</h5>
+                </div>
+                <div>
+                  <p>{desc}</p>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-5 col-md-5 col-12">
@@ -82,8 +86,11 @@ const Footer = () => {
                 <div className="col-xl-8 col-lg-8 col-md-8 col-12">
                   <div className="tp-copyright-social text-md-end mt-25">
                     {social_links.map((s, i) => (
-                      <div key={i} href="#">
-                        <i className={s}></i>
+                      <div  key={i} >
+                        <a href={s.link} target="_blank" >
+                           <i className={s.icon}></i>
+                        </a>
+                       
                          </div>
                     ))}
                   </div>

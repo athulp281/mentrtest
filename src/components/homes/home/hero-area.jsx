@@ -12,10 +12,10 @@ or leveling up, we’re with you every step of the way.
   btn_text: 'View All Services',
   btn_text_2: 'About MentrLoop',
   social_links: [
-    { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'http://facebook.com' },
-    { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/' },
-    { id: 2, icon: 'fab fa-twitter social-icon-2', title: 'Twitter',link: 'http://twitter.com' },
-    { id: 4, icon: 'fab fa-behance social-icon-4', title: 'Behance',link: 'https://www.behance.net/' },
+    { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'https://www.facebook.com/profile.php?id=61576718240212' },
+    { id: 3, icon: 'fab fa-instagram', title: 'Instagram',link: 'https://www.instagram.com/mentrloop/' },
+    { id: 2, icon: 'fab fa-linkedin-in', title: 'Linkedin',link: 'https://www.linkedin.com/company/mentrloop' },
+    
   ],
   hero_img: '/assets/img/hero/hero-2.png',
 }

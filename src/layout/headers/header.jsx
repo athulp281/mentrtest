@@ -5,6 +5,7 @@ import useSticky from '../../hooks/use-sticky';
 import Sidebar from '../../components/common/off-canvas';
 import NavMenus from './nav-menus';
 import MobileMenu from './mobile-menu';
+import MotionWrapper from '@/components/MotionWrapper';
 
 const Header = () => {
   const { headerSticky } = useSticky();
@@ -24,9 +25,11 @@ React.useEffect(() => {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-logo">
+                  <MotionWrapper directions={"left"} delay={.3}>
                   <Link href="/">
                     <img src="/assets/img/logo/logo-blue.png" alt="" />
                   </Link>
+                  </MotionWrapper>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">
