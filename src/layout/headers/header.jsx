@@ -32,15 +32,15 @@ React.useEffect(() => {
                   </MotionWrapper>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7">
-                <div className="tp-main-menu">
-                  <nav id="mobile-menu">
-                    {/* nav menus start */}
-                    <NavMenus />
-                    {/* nav menus end */}
-                  </nav>
-                </div>
-              </div>
+             <div className="col-xl-7 col-lg-7 d-flex justify-content-end">
+  <div className="tp-main-menu">
+    <nav id="mobile-menu">
+      {/* nav menus start */}
+      <NavMenus />
+      {/* nav menus end */}
+    </nav>
+  </div>
+</div>
               <div className="col-xl-2 col-lg-2">
                <div className="tp-menu-bar text-end" onClick={() => setSidebarOpen(true)}>
   {isClient && <button>
