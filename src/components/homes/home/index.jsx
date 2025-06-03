@@ -11,7 +11,9 @@ import ProjectArea from './project-area';
 import ServicesArea from './services-area';
 import Testimonial from './testimonial';
 import CooArea from './CooArea';
-import OurMentors from './OurMentors';
+import ReadyToBuildCta from './ReadyToBuildCta';
+import OurMentorNew from './OurMentorNew';
+import SocialIcons from '@/components/SocialIcons';
 
 const Home = () => {
  
@@ -20,14 +22,16 @@ const Home = () => {
     <Wrapper>
       <Header />
       <HeroArea />
+      <SocialIcons/>
       <CreativeArea />
       <BrandArea />
       <ServicesArea />
       <ProjectArea />
       <CooArea />
-      <OurMentors/>
+      <OurMentorNew/>
       {/* <Testimonial />
       <BlogArea /> */}
+      <ReadyToBuildCta/>
       <NewsLetter />
       <Footer />
     </Wrapper>

@@ -7,7 +7,7 @@ const MobileMenu = ({ logo, bg, transparent = true }) => {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
   return (
     <React.Fragment>
-      <div id="header-sticky-mobile" className={`tp-md-menu ${transparent ? 'header-transparent' : ''} d-lg-none pt-40 pb-40 
+      <div id="header-sticky-mobile" className={`tp-md-menu ${transparent ? 'header-transparent' : ''} d-lg-none pt-10 pb-10
     ${bg ? bg : ''} ${headerSticky ? 'header-sticky' : ''}`}>
         <div className="container-fluid">
           <div className="row align-items-center">

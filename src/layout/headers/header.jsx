@@ -19,7 +19,7 @@ React.useEffect(() => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area header-transparent pl-165 pr-165 pt-35 
+        <div id="header-sticky" className={`tp-header-area pl-165 pr-165  shadow-lg
         ${headerSticky ? 'header-sticky' : ''}`}>
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -27,7 +27,7 @@ React.useEffect(() => {
                 <div className="tp-logo">
                   <MotionWrapper directions={"left"} delay={.3}>
                   <Link href="/">
-                    <img src="/assets/img/logo/logo-blue.png" alt="" />
+                    <img height={60} src="/assets/img/logo/logo-blue.png" alt="" />
                   </Link>
                   </MotionWrapper>
                 </div>

@@ -37,26 +37,24 @@ const Footer = () => {
           <div className="tp-footer-widget wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".5s">
             <div className="row align-items-center">
               <div className="col-xl-7 col-lg-7 col-md-7 col-12">
-                <div className="tp-footer-top">
+                {/* <div className="tp-footer-top">
                   <h5 className="tp-footer-title">{title}</h5>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <p>{desc}</p>
-                </div>
+                </div> */}
               </div>
               <div className="col-xl-5 col-lg-5 col-md-5 col-12">
-                <div className="tp-footer-button text-start text-md-end">
+                {/* <div className="tp-footer-button text-start text-md-end">
                   <Link href="/contact" className="tp-btn">
-                    {/* <a className="tp-btn"> */}
                       {btn_text}<i className="far fa-arrow-right"></i>
-                      {/* </a> */}
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="tp-copyright-area pb-90 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
+        <div className="tp-copyright-area pb-90" >
           <div className="container">
             <div className="tp-copyright-box align-items-center">
               <div className="row align-items-center">

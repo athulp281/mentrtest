@@ -63,7 +63,7 @@ React.useEffect(() => {
           <div className="row gx-1">
             {bigItems.map((item) => (
               <div key={item.id} className="col-xl-6 col-lg-12">
-                 <MotionWrapper directions={"left"} delay={.4}>
+                 <MotionWrapper directions={"bottom"} delay={.4}>
                 <div className="tp-project-box mb-20">
                   <div className="tp-project-img fix mb-45">
                     <img className="w-100" src={item.img} alt="" />
@@ -92,7 +92,7 @@ from day one</p>
               <div className="row">
                 {sm_items.map(item => (
                   <div key={item.id} className=" col-xl-12 col-lg-12">
-                     <MotionWrapper directions={"right"} delay={.4}>
+                     <MotionWrapper directions={"bottom"} delay={.4}>
                     <div className="tp-project-box-sm d-flex align-items-center mb-20">
                       <div className="tp-project-sm-img fix ml-25 mr-35">
                         <img src={item.img} alt="" />

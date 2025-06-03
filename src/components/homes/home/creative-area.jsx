@@ -88,7 +88,7 @@ React.useEffect(() => {
                   
                   <div key={b.id} className="col-lg-4 col-md-12 col-xs-12 mb-30">
                     <MotionWrapper directions={"bottom"} delay={.4}>
-                    <div className={`tp-creative-item ${b?.color} wow tpfadeUp`}>
+                    <div className={`tp-creative-item ${b?.color}`}>
                       <div className="tp-creative-yellow d-flex align-items-center">
                         <div className="tp-creative-icon mr-35">
                           <i className={b.icon}></i>

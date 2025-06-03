@@ -90,7 +90,7 @@
     & span{
         font-size: 45px;
         font-weight: 700;
-        color: var(--tp-common-black);
+        color: var(--tp-common-white);
         line-height: 1;
         @media #{$lg} {
             font-size: 40px;
@@ -98,7 +98,7 @@
     }
     & p{
         font-size: 18px;
-        color: var(--tp-common-black);
+        color: var(--tp-common-white);
         font-weight: 500;
         @media #{$lg} {
             font-size: 15px;

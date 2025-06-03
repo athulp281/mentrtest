@@ -1,5 +1,6 @@
 import { Providers } from "./providers";
 // app/layout.tsx
+
 import "animate.css/animate.min.css";
 
 export const metadata = {
