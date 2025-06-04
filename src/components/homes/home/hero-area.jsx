@@ -10,7 +10,7 @@ const hero_contents = {
   text: <>Unlock your potential with continuous, hands-on skill development. Whether you're starting fresh
 or leveling up, we’re with you every step of the way.
 </>,
-  // btn_text: 'View All Services',
+
   btn_text_2: 'About MentrLoop',
   social_links: [
     { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'https://www.facebook.com/profile.php?id=61576718240212' },

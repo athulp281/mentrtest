@@ -16,7 +16,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev + 1) % images.length);
-    }, 4000); // 4 seconds per slide
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
