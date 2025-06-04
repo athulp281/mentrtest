@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const images = [
-  '/assets/img/hero/slider-1.png',
-  '/assets/img/hero/slider-2.png',
-  '/assets/img/hero/slide-6.png',
+  '/assets/img/slider/slider-1.png',
+  '/assets/img/slider/slide-6.png',
+  '/assets/img/slider/slider-5.png',
 ];
 
 const ImageSlider = () => {
