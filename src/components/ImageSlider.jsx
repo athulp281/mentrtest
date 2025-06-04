@@ -7,7 +7,7 @@ import Image from 'next/image';
 const images = [
   '/assets/img/hero/slider-1.png',
   '/assets/img/hero/slider-2.png',
-  '/assets/img/hero/slider-5.png',
+  '/assets/img/hero/slider-5.PNG',
 ];
 
 const ImageSlider = () => {
