@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Footer, Header, Wrapper } from '../../../layout/';
+import { Footer, FooterThree, Header, Wrapper } from '../../../layout/';
 import BlogArea from './blog-area';
 import BrandArea from './brand-area';
 import CreativeArea from './creative-area';
@@ -32,8 +32,9 @@ const Home = () => {
       {/* <Testimonial />
       <BlogArea /> */}
       <ReadyToBuildCta/>
-      <NewsLetter />
-      <Footer />
+      {/* <NewsLetter /> */}
+      {/* <Footer /> */}
+       <FooterThree/>
     </Wrapper>
   );
 };

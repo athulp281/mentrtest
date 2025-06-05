@@ -58,7 +58,7 @@
     }
 }
 .tp-creative-item{
-    background-color: var(--tp-theme-primary);
+    background-color: var(--tp-grey-1);
     padding: 40px 50px;
     border-radius: 20px;
     @media #{$xl}{
@@ -90,7 +90,7 @@
     & span{
         font-size: 45px;
         font-weight: 700;
-        color: var(--tp-common-white);
+        color: var(--tp-common-black);
         line-height: 1;
         @media #{$lg} {
             font-size: 40px;
@@ -98,7 +98,7 @@
     }
     & p{
         font-size: 18px;
-        color: var(--tp-common-white);
+        color: var(--tp-common-black);
         font-weight: 500;
         @media #{$lg} {
             font-size: 15px;

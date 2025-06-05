@@ -19,9 +19,9 @@ React.useEffect(() => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area pl-165 pr-165  shadow-lg
+        <div id="header-sticky" className={`tp-header-area pl-165  shadow-lg
         ${headerSticky ? 'header-sticky' : ''}`}>
-          <div className="container-fluid">
+          <div >
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-logo">

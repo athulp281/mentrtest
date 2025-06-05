@@ -2,6 +2,7 @@
 
 import ImageSlider from '@/components/ImageSlider';
 import MotionWrapper from '@/components/MotionWrapper';
+import PopupForm from '@/components/PopupForm';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 
@@ -54,6 +55,7 @@ const HeroArea = () => {
                         <i className="far fa-arrow-right"></i>
                        
                     </Link>
+                    <PopupForm/>
                   </div>
                   </MotionWrapper>
                   {/* <div className="tp-hero-social pb-30">

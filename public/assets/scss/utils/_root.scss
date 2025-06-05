@@ -1,6 +1,10 @@
 @use 'colors' as *;
 @use 'typography' as *;
 
+
+html {
+  scroll-behavior: smooth;
+}
 :root {
     /**
     @font family declaration

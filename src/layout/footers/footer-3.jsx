@@ -4,8 +4,8 @@ import SocialLinks from '../social-links';
 import CopyrightArea from './component/copyright-area';
 
 const footer_contents = {
-  logo: '/assets/img/logo/logo-white.png',
-  widget_desc: 'A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla',
+  logo: '/assets/img/logo/logo-blue.png',
+  widget_desc: 'Unlock your potential with continuous, hands-on skill development. Whether you are starting fresh or leveling up, we’re with you every step of the way.',
   footer_widgets: [
     {
       w_class: 'd-flex justify-content-lg-center',
@@ -20,8 +20,8 @@ const footer_contents = {
   ],
   subscribe_title: 'Subscribe Newslatter',
   subscribe_text: 'Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo',
-  copy_right_text: <>© Copyright ©{new Date().getFullYear()} Collax. All Rights Reserved Copyright</>,
-  conditions: ['Terms and conditions', 'Privacy policy', 'Login / Signup']
+  copy_right_text: <>© Copyright ©{new Date().getFullYear()} Mentrloop. All Rights Reserved Copyright</>,
+  conditions: ['Terms and conditions', 'Privacy policy']
 }
 
 const { conditions, copy_right_text, footer_widgets, logo, widget_desc, subscribe_text, subscribe_title } = footer_contents;
@@ -37,7 +37,9 @@ const FooterThree = ({ home_four = false }) => {
                 <div className="tp-footer-widget">
                   {!home_four && <div className="tp-footer-widget__logo mb-30">
                     <Link href="/">
-                      <a><img src={logo} alt="" /></a>
+                      
+                        <img src={logo} alt="" />
+                       
                     </Link>
                   </div>}
                   {home_four && <div className="tp-footer-widget__title mb-30">
