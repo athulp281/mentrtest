@@ -177,6 +177,11 @@
     @media #{$sm} {
         font-size: 56px;
     }
+     & span{
+        padding-left: 20px;
+            color: var(--tp-theme-primary);
+            text-decoration: underline;
+        }
 }
 
 .tp-hero-xs-title {

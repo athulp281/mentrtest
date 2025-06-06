@@ -7,7 +7,7 @@ import MotionWrapper from '@/components/MotionWrapper';
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
   subtitle: 'What We Do?',
-  title: 'Future-Ready Skills We Provide for Lifelong Success',
+  title: <>Future-Ready Skills We Provide for Lifelong <span> Success</span></>,
   btn_text: 'View All Services',
 }
 

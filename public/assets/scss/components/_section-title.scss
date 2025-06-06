@@ -40,6 +40,11 @@
     @media #{$sm}{
         font-size: 35px;
     }
+     & span{
+        
+            color: var(--tp-theme-primary);
+            text-decoration: underline;
+        }
 }
 .tp-title-sm{
     font-size: 50px;

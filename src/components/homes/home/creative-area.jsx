@@ -13,26 +13,26 @@ const creative_contents = {
   video_id: 'PO_fBTkoznc',
   video_title: 'Highlights That Make the Difference',
   creative_box: [
-    { id: 1, duration: '.3s', delay: '.6s', icon: 'fas fa-briefcase', box_title: ',', 
+    { id: 1, duration: '.3s', delay: '.6s',color: 'tp-cardbg-1', icon: 'fas fa-briefcase', box_title: ',', 
     box_text: 'Career Growth & Opportunity' },
     {
-      id: 2, duration: '.5s', delay: '.8s', color: 'tp-creative-blue', icon: 'fas fa-user-check',
+      id: 2, duration: '.5s', delay: '.8s', color: 'tp-cardbg-2', icon: 'fas fa-user-check',
       box_title: ',', box_text: 'Boost Confidence & Independence'
     },
     {
-      id: 3, duration: '.7s', delay: '1s', color: 'tp-creative-pink', icon: 'fas fa-lightbulb',
+      id: 3, duration: '.7s', delay: '1s', color: 'tp-cardbg-3', icon: 'fas fa-lightbulb',
       box_title: ',', box_text: 'Improve Problem Solving & Creativity'
     },
     {
-      id: 4, duration: '.7s', delay: '1s', color: 'tp-creative-blue', icon: 'fas fa-clock',
+      id: 4, duration: '.7s', delay: '1s', color: 'tp-cardbg-4', icon: 'fas fa-clock',
       box_title: ',', box_text: 'Increase Productivity & Efficiency'
     },
     {
-      id: 5, duration: '.7s', delay: '1s', color: 'tp-creative-pink', icon: 'fas fa-seedling',
+      id: 5, duration: '.7s', delay: '1s', color: 'tp-cardbg-1', icon: 'fas fa-seedling',
       box_title: ',', box_text: 'Enhance Life Long Self Growth'
     },
     {
-      id: 6, duration: '.7s', delay: '1s', icon: 'fas fa-lightbulb',
+      id: 6, duration: '.7s', delay: '1s', icon: 'fas fa-lightbulb',color: 'tp-cardbg-2',
       box_title: ',', box_text: 'Supports Entrepreneurship & Innovation'
     },
   ]
@@ -54,16 +54,16 @@ React.useEffect(() => {
         <div className="shape-two z-index-1">
           <img src={shape_1} alt="" />
         </div>
-        <div className="tp-creative-area p-relative black-bg pt-140 pb-135 fix">
-          <div className="circle-animation testimonial">
-            <span className="tp-circle-1"></span>
-            <span className="tp-circle-2"></span>
-          </div>
-          {creative_shapes.map((s, i) => (
+        <div className="tp-creative-area p-relative white-bg pt-140 pb-135 fix">
+         <div className="circle-animation service">
+        <span className="tp-circle-1"></span>
+        <span className="tp-circle-2"></span>
+      </div>
+          {/* {creative_shapes.map((s, i) => (
             <div key={i} className={`creative-shape-img${s.img_2 ? s.img_2 : ''}`}>
               <img src={s.img} alt="" />
             </div>
-          ))}
+          ))} */}
           <div className="container creative-z-index ">
             <div className="row">
               <div className="col-lg-12">
@@ -88,7 +88,7 @@ React.useEffect(() => {
                   
                   <div key={b.id} className="col-lg-4 col-md-12 col-xs-12 mb-30">
                     <MotionWrapper directions={"bottom"} delay={.4}>
-                    <div className={`tp-creative-item`}>
+                    <div className={`tp-creative-item ${b?.color}`}>
                       <div className="tp-creative-yellow d-flex align-items-center">
                         <div className="tp-creative-icon mr-35">
                           <i className={b.icon}></i>
@@ -109,9 +109,6 @@ React.useEffect(() => {
         </div>
       </div>
 
-      {/* video modal start */}
-      {/* <VideoModal isVideoOpen={isVideoOpen} setIsVideoOpen={setIsVideoOpen} videoId={video_id} /> */}
-      {/* video modal end */}
     </>
   );
 };

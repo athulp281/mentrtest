@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 const hero_contents = {
-  title: 'Not Just a Learning Curve - It’s a Lifelong Loop of Growth.',
+  title: <>Not Just a Learning Curve - It’s a Lifelong Loop of<span>Growth.</span> </>,
   text: <>Unlock your potential with continuous, hands-on skill development. Whether you're starting fresh
 or leveling up, we’re with you every step of the way.
 </>,
