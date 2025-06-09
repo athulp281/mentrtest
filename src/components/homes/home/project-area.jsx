@@ -36,7 +36,7 @@ React.useEffect(() => {
             <div className="tp-project-section-box">
                <MotionWrapper directions={"bottom"} delay={.4}>
               <h5 className="tp-subtitle">Our Target</h5>
-              <h2 className="tp-title">What to Expect after learning. </h2>
+              <h2 className="tp-title">What to Expect after <span>learning.</span> </h2>
               </MotionWrapper>
             </div>
           </div>

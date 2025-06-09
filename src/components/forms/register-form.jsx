@@ -1,61 +1,126 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import { registerSchema } from '../../utils/validation-schema';
+import * as Yup from 'yup';
 import ErrorMsg from './error-msg';
-import Link from 'next/link';
 import useFirebase from '../../hooks/use-firebase';
-import { useSelector } from 'react-redux';
+
+const courseOptions = [
+  'Graphic Designing',
+  'Motion Graphics and FX',
+  'Video Editing and FX',
+  'Content Writing',
+  'MERN Stack Development',
+  'Digital Marketing',
+  'English Language',
+  'German Language',
+  'Spanish Language',
+  'Arabic Language',
+  'Other Enquiry',
+];
+
+const registerSchema = Yup.object().shape({
+  name: Yup.string().required('Name is required'),
+  phone: Yup.string().required('Phone number is required'),
+  whatsapp: Yup.string(),
+  email: Yup.string().email('Invalid email'),
+  course: Yup.string().required('Please select a course'),
+});
 
 const RegisterForm = () => {
-  // register With Email Password
-  const {registerWithEmailPassword} = useFirebase();
-  // use formik
+  const { registerWithEmailPassword } = useFirebase();
+
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } = useFormik({
-    initialValues: { name: '', email: '', password: '' },
+    initialValues: {
+      name: '',
+      phone: '',
+      whatsapp: '',
+      email: '',
+      course: '',
+    },
     validationSchema: registerSchema,
     onSubmit: (values, { resetForm }) => {
-      registerWithEmailPassword(values.email,values.password,values.name)
-      resetForm()
-    }
-  })
+      console.log('Form Submitted:', values);
+      // You can use your Firebase logic here if needed
+      resetForm();
+    },
+  });
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="tp-number">
         <label htmlFor="name">Name</label>
-        <input value={values.name} onChange={handleChange}
-          onBlur={handleBlur} type="text" placeholder="Enter your name" id="name" />
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          value={values.name}
+          onChange={handleChange}
+          onBlur={handleBlur}
+        />
         {touched.name && <ErrorMsg error={errors.name} />}
       </div>
-      <div className="tp-mail">
-        <label htmlFor="email">Email</label>
-        <input value={values.email} onChange={handleChange}
-          onBlur={handleBlur} type="text" placeholder="Enter your Email" id="email" />
+
+      <div className="tp-number">
+        <label htmlFor="phone">Phone Number</label>
+        <input
+          id="phone"
+          type="text"
+          placeholder="Enter your phone number"
+          value={values.phone}
+          onChange={handleChange}
+          onBlur={handleBlur}
+        />
+        {touched.phone && <ErrorMsg error={errors.phone} />}
+      </div>
+
+      <div className="tp-number">
+        <label htmlFor="whatsapp">WhatsApp Number (Optional)</label>
+        <input
+          id="whatsapp"
+          type="text"
+          placeholder="Enter your WhatsApp number"
+          value={values.whatsapp}
+          onChange={handleChange}
+          onBlur={handleBlur}
+        />
+        {touched.whatsapp && <ErrorMsg error={errors.whatsapp} />}
+      </div>
+
+      <div className="tp-number">
+        <label htmlFor="email">Email (Optional)</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          value={values.email}
+          onChange={handleChange}
+          onBlur={handleBlur}
+        />
         {touched.email && <ErrorMsg error={errors.email} />}
       </div>
-      <div className="tp-password">
-        <label htmlFor="password">Password</label>
-        <input value={values.password} onChange={handleChange}
-          onBlur={handleBlur} type="password" placeholder="Enter your password" id="password" />
-        {touched.password && <ErrorMsg error={errors.password} />}
+
+      <div className="tp-number">
+        <label htmlFor="course">Select Course</label>
+        <select
+          id="course"
+          value={values.course}
+          onChange={handleChange}
+          onBlur={handleBlur}
+        >
+          <option value="">-- Select a Course --</option>
+          {courseOptions.map((course, index) => (
+            <option key={index} value={course}>
+              {course}
+            </option>
+          ))}
+        </select>
+        {touched.course && <ErrorMsg error={errors.course} />}
       </div>
-      <div className="tp-forgot-password d-flex justify-content-between">
-        <div className="checkbox">
-          <input type="checkbox" id="Remember" name="fav_language" value="Remember" />
-          {' '}<label htmlFor="Remember">Remember me</label>
-        </div>
-      </div>
+
       <div className="tp-login-button">
-        <button className="tp-btn-yellow w-100" type="submit">Sign up</button>
-      </div>
-      <div className="tp-signup d-flex justify-content-between">
-        <div className="account">
-          <a href="#">Don’t have an account?</a>
-        </div>
-        <div className="signin">
-          <Link href="/login">
-            <a>Sign in now</a>
-          </Link>
-        </div>
+        <button className="tp-btn-yellow w-100" type="submit">
+          Submit Details
+        </button>
       </div>
     </form>
   );

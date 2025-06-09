@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import RegisterForm from "./forms/register-form";
 
 const courseOptions = [
   "Graphic Designing",
@@ -17,8 +18,8 @@ const courseOptions = [
   "Other Enquiry",
 ];
 
-const PopupForm = () => {
-  const [show, setShow] = useState(false);
+const PopupForm = ({show,setShow}) => {
+ 
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -40,10 +41,7 @@ const PopupForm = () => {
 
   return (
     <>
-      <button className="btn btn-primary" onClick={() => setShow(true)}>
-        Enquire Now
-      </button>
-
+     
       <AnimatePresence>
         {show && (
           <motion.div
@@ -63,12 +61,12 @@ const PopupForm = () => {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="d-flex justify-content-between align-items-center mb-3">
-                <h5 className="mb-0">Course Enquiry</h5>
+              <div className="d-flex justify-content-end align-items-center mb-3">
+                {/* <h5 className="mb-0">Course Enquiry</h5> */}
                 <button className="btn-close" onClick={() => setShow(false)} />
               </div>
 
-              <form onSubmit={handleSubmit}>
+            {/*   <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <label className="form-label">Name *</label>
                   <input
@@ -138,7 +136,32 @@ const PopupForm = () => {
                     Submit
                   </button>
                 </div>
-              </form>
+              </form> */}
+              <>
+      <div className="tp-login-area">
+        <div className="container-fluid p-0">
+          <div className="row gx-0 align-items-center">
+            {/* <div className="col-xl-6 col-lg-6 col-12">
+              <div className="tp-login-thumb login-space sky-bg d-flex justify-content-center h-100">
+                <img className='h-100' src="/assets/img/contact/login.png" alt="" />
+              </div>
+            </div> */}
+            <div className="col-xl-12 col-lg-12 col-12">
+              <div className="tp-login-wrapper d-flex justify-content-center">
+                <div className="tplogin">
+                  <div className="tplogin__title">
+                    <h3 className="tp-login-title">Let's Grow with us</h3>
+                  </div>
+                  <div className="tplogin__form">
+                    <RegisterForm />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
             </motion.div>
           </motion.div>
         )}

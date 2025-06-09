@@ -3,7 +3,7 @@ import React from 'react';
 const ErrorMsg = ({error}) => {
   return (
     <>
-     <p style={{color:'red'}}>{error}</p> 
+     <p style={{color:'red',paddingBottom:0,fontSize:10}}>{error}</p> 
     </>
   );
 };

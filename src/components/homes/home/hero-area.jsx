@@ -4,7 +4,7 @@ import ImageSlider from '@/components/ImageSlider';
 import MotionWrapper from '@/components/MotionWrapper';
 import PopupForm from '@/components/PopupForm';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const hero_contents = {
   title: <>Not Just a Learning Curve - It’s a Lifelong Loop of<span>Growth.</span> </>,
@@ -12,7 +12,7 @@ const hero_contents = {
 or leveling up, we’re with you every step of the way.
 </>,
 
-  btn_text_2: 'About MentrLoop',
+  btn_text_2: 'Enquire Now',
   social_links: [
     { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'https://www.facebook.com/profile.php?id=61576718240212' },
     { id: 3, icon: 'fab fa-instagram social-icon-3', title: 'Instagram',link: 'https://www.instagram.com/mentrloop/' },
@@ -25,6 +25,7 @@ or leveling up, we’re with you every step of the way.
 const { title, text, btn_text, btn_text_2, social_links, hero_img } = hero_contents;
 
 const HeroArea = () => {
+   const [show, setShow] = useState(false);
 
   return (
     <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
@@ -49,13 +50,13 @@ const HeroArea = () => {
                  <MotionWrapper directions={"bottom"} delay={.4}>
                   <div className="tp-hero-button mb-140" >
                 
-                    <Link href="/about-me" className="tp-btn-grey">
+                    <div className="tp-btn-grey" onClick={()=>setShow(true)}>
                      
                         {btn_text_2}
                         <i className="far fa-arrow-right"></i>
                        
-                    </Link>
-                    <PopupForm/>
+                    </div>
+                    <PopupForm show={show} setShow={setShow} />
                   </div>
                   </MotionWrapper>
                   {/* <div className="tp-hero-social pb-30">

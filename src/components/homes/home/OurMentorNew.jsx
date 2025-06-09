@@ -6,7 +6,7 @@ import MotionWrapper from '@/components/MotionWrapper';
 const blog_contents = {
   shapes: ['blog/hero-shape-5.1.png', 'testimonial/testimonial-shape-5.3.png'],
   subtitle: 'Our Team',
-  title: 'Meet our mentors',
+  title: <>Meet our <span>mentors</span> </>,
   blog_items: blog_data.filter(b => b.home_6),
 }
 const { subtitle, title, shapes, blog_items } = blog_contents;

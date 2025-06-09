@@ -35,7 +35,7 @@ const FooterThree = ({ home_four = false }) => {
             <div className="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="tp-footer-widget">
-                  {!home_four && <div className="tp-footer-widget__logo mb-30">
+                  {!home_four && <div className="tp-footer-widget__logo mb-30" style={{backgroundColor:"white",borderRadius:20}}>
                     <Link href="/">
                       
                         <img src={logo} alt="" />
