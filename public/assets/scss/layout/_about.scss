@@ -10,6 +10,12 @@
 	max-width: inherit;
 	margin-left: -210px;
 	position: relative;
+	background-color: var(--tp-common-white);
+	border: #4267B2 5px solid;
+	border-radius: 20px;
+	overflow: hidden;
+	height: 400px;
+	width: 300px;
 	z-index: 2;
 
 	@media #{$xxl,$xl,$lg,$md} {
@@ -82,6 +88,9 @@
 	letter-spacing: -2px;
 	line-height: 1.3;
 	margin-bottom: 45px;
+	& span {
+		color: var(--tp-theme-primary);
+	}
 
 	@media #{$md} {
 		font-size: 42px;

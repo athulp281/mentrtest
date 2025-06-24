@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import React from 'react';
 import { useEffect } from 'react';
@@ -5,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import useFirebase from '../../hooks/use-firebase';
 import useSticky from '../../hooks/use-sticky';
 import { get_user } from '../../redux/features/auth-slice';
-import Languages from './component/languages';
 import MobileMenu from './mobile-menu';
 import NavMenus from './nav-menus';
 
@@ -31,7 +31,7 @@ const HeaderSix = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a><img src="/assets/img/logo/logo-blue.png" alt="" /></a>
+                  <img src="/assets/img/logo/logo-blue.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -47,25 +47,25 @@ const HeaderSix = () => {
               <div className="col-xxl-4 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end ">
                   <ul className="d-none d-xxl-block">
-                    {!user?.email && <li>
+                    {/* {!user?.email && <li>
                       <Link href="/login">
-                        <a><i className="far fa-user fa-user"></i> Login</a>
+                        <i className="far fa-user fa-user"></i> Login
                       </Link>
-                    </li>}
-                    {user?.email && <li>
+                    </li>} */}
+                    {/* {user?.email && <li>
                         <button onClick={logout} style={{cursor:'pointer'}}>
                           <a><i className="far fa-user fa-user"></i>Logout</a>
                         </button>
-                    </li>}
-                    <li><a href="#">EN<i className="fal fa-arrow-down arrow-down"></i></a>
+                    </li>} */}
+                    {/* <li><a href="#">EN<i className="fal fa-arrow-down arrow-down"></i></a>
                       <Languages />
-                    </li>
+                    </li> */}
                   </ul>
-                  <div className="tp-header-yellow-button">
-                    <Link href="/about">
-                      <a className="tp-btn-white">How it Works</a>
+                  {/* <div className="tp-header-yellow-button">
+                    <Link href="/about" className="tp-btn-white">
+                      How it Works
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

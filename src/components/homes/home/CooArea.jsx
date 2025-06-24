@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const about_contents = {
-  about_img: '/assets/img/about/about-6.1.png',
+  about_img: '/assets/img/about/coo.png',
   subtitle: 'COO Talks',
   title: <>A Word From Our  <span className="tp-section-highlight"> COO
     <svg width="247" height="12" viewBox="0 0 247 12" fill="none" xmlns="http://www.w3.org/2000/svg">

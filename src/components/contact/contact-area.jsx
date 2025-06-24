@@ -14,17 +14,17 @@ const ContactArea = () => {
                 </div>
                 <div className="tp-contact-info mb-40">
                   <h4 className="contact-title">Mail Address</h4>
-                  <span><a href="mailto:(webmail@gmail.com)">(webmail@gmail.com)</a></span>
-                  <span><a href="mailto:(infoweb@gmail.com)">(infoweb@gmail.com)</a></span>
+                  <span><a href="mailto:(Info@mentrloop.com)">(Info@mentrloop.com)</a></span>
+                  {/* <span><a href="mailto:(infoweb@gmail.com)">(infoweb@gmail.com)</a></span> */}
                 </div>
                 <div className="tp-contact-info mb-40">
                   <h4 className="contact-title">Phone Number</h4>
-                  <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span>
-                  <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span>
+                  <span><a href="tel:(+91 7306426656)">(+91 7306426656)</a></span>
+                  {/* <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span> */}
                 </div>
                 <div className="tp-contact-info">
                   <h4 className="contact-title">Address line</h4>
-                  <span><a href="https://www.google.com/maps" target="blank">Bowery St, New York, NY 10013,USA. Bowery Steae</a></span>
+                  <span><a href="https://maps.app.goo.gl/Kf2CdEfBBZ6nwpqQ7" target="blank">A1 residency hi homes kuravankonam kowadir, Trivandrum pin:695003</a></span>
                 </div>
               </div>
             </div>

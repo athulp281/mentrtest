@@ -77,7 +77,7 @@ const FooterThree = ({ home_four = false }) => {
                     <p>{subscribe_text}</p>
                   </div>
                   <div className="tp-footer-widget__input">
-                    <form onSubmit={e => e.preventDefault()}>
+                    <form >
                       <input type="text" placeholder="Enter Mail" />
                       <button type="submit"><i className="fas fa-paper-plane"></i></button>
                     </form>

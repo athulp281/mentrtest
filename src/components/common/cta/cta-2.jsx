@@ -16,11 +16,11 @@ const CtaTwo = () => {
                 </h2>
               </div>
               <div className="tp-news-button wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                <Link href="/contact">
-                  <a className="tp-btn-lg-yellow mr-20">Become a Partner</a>
+                <Link href="/contact" className="tp-btn-lg-yellow mr-20">
+                 Become a Partner
                 </Link>
-                <Link href="/about-me">
-                  <a className="tp-btn-sky">Press Office</a>
+                <Link href="/about-me" className="tp-btn-sky">
+                 Press Office
                 </Link>
               </div>
             </div>

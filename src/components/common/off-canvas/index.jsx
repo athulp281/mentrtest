@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import menu_data from '../../../layout/headers/menu-data';
@@ -64,6 +65,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               <li>
                 <i className="fas fa-star"></i> <a href="https://maps.app.goo.gl/Kf2CdEfBBZ6nwpqQ7" rel="noreferrer" target="_blank">A1 residency hi homes kuravankonam kowadir, Trivandrum pin:695003</a>
               </li>
+
+              
               <li><i className="fas fa-star"></i><a href="tel:7306426656">+91 7306426656</a></li>
               <li><i className="fas fa-star"></i><a href="mailto:Info@mentrloop.com">Info@mentrloop.com</a></li>
             </ul>
