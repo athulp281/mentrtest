@@ -15,12 +15,10 @@ const ContactArea = () => {
                 <div className="tp-contact-info mb-40">
                   <h4 className="contact-title">Mail Address</h4>
                   <span><a href="mailto:(Info@mentrloop.com)">(Info@mentrloop.com)</a></span>
-                  {/* <span><a href="mailto:(infoweb@gmail.com)">(infoweb@gmail.com)</a></span> */}
                 </div>
                 <div className="tp-contact-info mb-40">
                   <h4 className="contact-title">Phone Number</h4>
                   <span><a href="tel:(+91 7306426656)">(+91 7306426656)</a></span>
-                  {/* <span><a href="tel:(+1255-568-6523)">(+1255 - 568 - 6523)</a></span> */}
                 </div>
                 <div className="tp-contact-info">
                   <h4 className="contact-title">Address line</h4>
