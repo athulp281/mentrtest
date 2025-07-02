@@ -80,7 +80,7 @@ const HeroArea = () => {
                {/* <MotionWrapper directions={"top"} delay={.4}> <div >
                 <img src={hero_img} alt="" />
               </div></MotionWrapper> */}
-             <div>new test test</div>
+             <div>nextsjdihdij</div>
             </div>
           </div>
         </div>
