@@ -3,9 +3,6 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import ErrorMsg from './error-msg';
 import useFirebase from '../../hooks/use-firebase';
-import { useDispatch,useSelector } from 'react-redux';
-import { postPublicLead } from '@/redux/features/lead-slice';
-import SuccessAlert from '../alert/Alert';
 
 const courseOptions = [
   'Graphic Designing',
@@ -29,11 +26,8 @@ const registerSchema = Yup.object().shape({
   course: Yup.string().required('Please select a course'),
 });
 
-const RegisterForm = ({open,setOpen}) => {
-  const dispatch = useDispatch();
-  const {loading} = useSelector((state) => state.lead);
+const RegisterForm = () => {
   const { registerWithEmailPassword } = useFirebase();
-  const [show,setShow] = React.useState(false);
 
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } = useFormik({
     initialValues: {
@@ -46,13 +40,8 @@ const RegisterForm = ({open,setOpen}) => {
     validationSchema: registerSchema,
     onSubmit: (values, { resetForm }) => {
       console.log('Form Submitted:', values);
-    dispatch(postPublicLead(values)).then((res) => {
-      if(res.payload.message === 'success') {
-        setShow(true);
-        resetForm();
-      }
-    })
-      // resetForm();
+      // You can use your Firebase logic here if needed
+      resetForm();
     },
   });
 
@@ -130,11 +119,9 @@ const RegisterForm = ({open,setOpen}) => {
 
       <div className="tp-login-button">
         <button className="tp-btn-yellow w-100" type="submit">
-          {loading ? 'Submitting...' : 'Submit Details'}
-          
+          Submit Details
         </button>
       </div>
-      <SuccessAlert show={show} setShow={setShow} setOpen={setOpen} />
     </form>
   );
 };
