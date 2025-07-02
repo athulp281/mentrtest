@@ -5,6 +5,7 @@ import menu_data from './menu-data';
 const NavMenus = () => {
   return (
     <ul>
+      <div>heloo world new test</div>
       {menu_data.map((menu, i) => (
         <li key={i} className={`${menu.has_dropdown ? 'has-dropdown' : ''}
       ${menu.mega_menu ? 'has-mega-menu' : ''}`}>
